@@ -1,0 +1,25 @@
+ # Ignore all files in the data/ folder
+data/
+
+# But keep .dvc files to track the data folder
+!data/*.dvc
+
+# Ignore DVC cache directory (this is where DVC stores local copies of large files)
+.dvc/cache/
+
+# Ignore the DVC configuration files that store remote settings and other local config info
+.dvc/cache/
+.dvc/tmp/
+.dvc/config
+.dvc/config.local
+
+# Ignore Python environment files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environment folders
+env/
+.venv/
